@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/contact_form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:text="New Expense"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:typeface="serif"
+        android:layout_weight="2"
+        />
+
+    <EditText
+        android:id="@+id/expAmount"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Expense Amount"
+
+        android:layout_weight="1"/>
+
+    <!--<EditText-->
+        <!--android:id="@+id/expID"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:backgroundTint="@color/colorPrimaryDark"-->
+        <!--android:hint="Expense ID"-->
+        <!--android:layout_weight="2"-->
+        <!--/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+
+        <EditText
+            android:id="@+id/expID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="Expense ID" />
+
+        <Button
+            android:id="@+id/btnExpGetID"
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:drawableStart="@drawable/ic_cloud_download_black_24dp"
+            android:elevation="4dp"
+            android:text="Get ID"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+
+        <EditText
+            android:id="@+id/expAuth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="Authentication"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btnExpAuthUser"
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:drawableStart="@drawable/ic_spellcheck_black_24dp"
+            android:elevation="4dp"
+            android:text="Authenticate"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/expComments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Comments" />
+
+    <!--<EditText-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:backgroundTint="@color/colorPrimaryDark"-->
+    <!--android:gravity="top"-->
+    <!--android:hint="Your Message"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--android:breakStrategy="balanced"-->
+    <!--android:inputType="textMultiLine"-->
+    <!--android:singleLine="false"-->
+    <!--android:padding="5dp" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <Button
+            android:padding="10dp"
+            android:id="@+id/btnExpSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#52cd3d"
+            android:drawableStart="@drawable/ic_check_circle_black_24dp"
+            android:elevation="4dp"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:textColor="#fff" />
+
+        <Button
+            android:padding="10dp"
+            android:id="@+id/btnExpCancel9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="#ff5249"
+            android:drawableStart="@drawable/ic_delete_forever_black_24dp"
+            android:elevation="4dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>

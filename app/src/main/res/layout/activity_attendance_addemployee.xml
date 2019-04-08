@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/contact_form_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="New Employee form"
+        android:textColor="#fff"
+        android:background="#657adb"
+        android:textSize="28sp"
+         />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+
+        <EditText
+            android:padding="5dp"
+            android:id="@+id/empName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:hint="Name"
+            />
+
+        <EditText
+            android:padding="5dp"
+            android:id="@+id/empuser"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:hint="Username"
+            />
+
+        <EditText
+            android:padding="5dp"
+            android:id="@+id/emppass"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:hint="Password"
+            />
+
+        <EditText
+            android:padding="5dp"
+            android:id="@+id/empclearance"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:hint="Clearance"
+            />
+
+        <EditText
+            android:padding="5dp"
+            android:id="@+id/empcomments"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:hint="Comments"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:drawableLeft="@drawable/ic_check_circle_black_24dp"
+                android:id="@+id/btnSubmit"
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent"
+                android:background="#52cd3d"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:elevation="4dp"
+                android:text="Submit"
+                android:textColor="#fff" />
+
+            <Button
+                android:background="#ff5249"
+                android:drawableLeft="@drawable/ic_delete_forever_black_24dp"
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:elevation="4dp"
+                android:text="Cancel"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!--<EditText-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:backgroundTint="@color/colorPrimaryDark"-->
+        <!--android:gravity="top"-->
+        <!--android:hint="Your Message"-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--android:breakStrategy="balanced"-->
+        <!--android:inputType="textMultiLine"-->
+        <!--android:singleLine="false"-->
+        <!--android:padding="5dp" />-->
+
+
+
+
+</LinearLayout>
